@@ -72,7 +72,7 @@ export default {
             } else {
                 subConverter = subConverter.split("//")[1] || subConverter;
             }
-            subConfig = (url.searchParams.has('subconfig') && url.searchParams.get('subconfig') !== 'default') ? url.searchParams.get('subconfig') : subConfig;
+            //subConfig = (url.searchParams.has('subconfig') && url.searchParams.get('subconfig') !== 'default') ? url.searchParams.get('subconfig') : subConfig;
             const trojan = url.searchParams.get('trojan') || false;
             const uuid = url.searchParams.get('uuid') || env.UUID;
             const uuid_json = await getLocalData(bphost, uuid);
